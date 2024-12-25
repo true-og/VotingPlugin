@@ -175,96 +175,101 @@ public class BungeeHandler implements Listener {
 	}
 
 	public void loadGlobalMysql() {
-		if (plugin.getBungeeSettings().isGloblalDataEnabled()) {
-			if (timer != null) {
-				timer.shutdown();
-				try {
-					timer.awaitTermination(5, TimeUnit.SECONDS);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-				timer.shutdownNow();
-			}
-			timer = Executors.newScheduledThreadPool(1);
-			timer.scheduleWithFixedDelay(new Runnable() {
+    if (plugin.getBungeeSettings().isGloblalDataEnabled()) {
+        if (timer != null) {
+            timer.shutdown();
+            try {
+                timer.awaitTermination(5, TimeUnit.SECONDS);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            timer.shutdownNow();
+        }
+        timer = Executors.newScheduledThreadPool(1);
+        timer.scheduleWithFixedDelay(() -> checkGlobalData(), 60, 10, TimeUnit.SECONDS);
+        timer.scheduleWithFixedDelay(() -> globalDataHandler.setString(
+                plugin.getBungeeSettings().getServer(),
+                "LastOnline",
+                "" + LocalDateTime.now().atZone(ZoneOffset.UTC).toInstant().toEpochMilli()),
+                1, 60, TimeUnit.MINUTES);
 
-				@Override
-				public void run() {
-					checkGlobalData();
-				}
-			}, 60, 10, TimeUnit.SECONDS);
-			timer.scheduleWithFixedDelay(new Runnable() {
+        if (globalDataHandler != null) {
+            globalDataHandler.getGlobalMysql().close();
+        }
 
-				@Override
-				public void run() {
-					globalDataHandler.setString(plugin.getBungeeSettings().getServer(), "LastOnline",
-							"" + LocalDateTime.now().atZone(ZoneOffset.UTC).toInstant().toEpochMilli());
-				}
-			}, 1, 60, TimeUnit.MINUTES);
-			if (globalDataHandler != null) {
-				globalDataHandler.getGlobalMysql().close();
-			}
-			if (plugin.getBungeeSettings().isGloblalDataUseMainMySQL()
-					&& plugin.getStorageType().equals(UserStorage.MYSQL)) {
-				globalDataHandler = new GlobalDataHandler(
-						new GlobalMySQL("VotingPlugin_GlobalData", plugin.getMysql().getMysql()) {
+        if (plugin.getBungeeSettings().isGloblalDataUseMainMySQL()
+                && plugin.getStorageType().equals(UserStorage.MYSQL)) {
+            globalDataHandler = new GlobalDataHandler(
+                    new GlobalMySQL("VotingPlugin_GlobalData", plugin.getMysql().getMysql()) {
 
-							@Override
-							public void warning(String text) {
-								plugin.getLogger().warning(text);
-							}
+                        @Override
+                        public void warning(String text) {
+                            plugin.getLogger().warning(text);
+                        }
 
-							@Override
-							public void severe(String text) {
-								plugin.getLogger().severe(text);
-							}
+                        @Override
+                        public void severe(String text) {
+                            plugin.getLogger().severe(text);
+                        }
 
-							@Override
-							public void debug(Exception e) {
-								plugin.debug(e);
-							}
+                        @Override
+                        public void debug(Exception e) {
+                            plugin.debug(e);
+                        }
 
-							@Override
-							public void debug(String text) {
-								plugin.debug(text);
-							}
-						});
-			} else {
-				globalDataHandler = new GlobalDataHandler(
-						new GlobalMySQL("VotingPlugin_GlobalData", new MysqlConfigSpigot(
-								plugin.getBungeeSettings().getData().getConfigurationSection("GlobalData"))) {
+                        @Override
+                        public void debug(String text) {
+                            plugin.debug(text);
+                        }
 
-							@Override
-							public void warning(String text) {
-								plugin.getLogger().warning(text);
-							}
+                        @Override
+                        public void info(String message) { // Add implementation for info(String)
+                            plugin.getLogger().info(message);
+                        }
+                    });
+        } else {
+            globalDataHandler = new GlobalDataHandler(
+                    new GlobalMySQL("VotingPlugin_GlobalData", new MysqlConfigSpigot(
+                            plugin.getBungeeSettings().getData().getConfigurationSection("GlobalData"))) {
 
-							@Override
-							public void severe(String text) {
-								plugin.getLogger().severe(text);
-							}
+                        @Override
+                        public void warning(String text) {
+                            plugin.getLogger().warning(text);
+                        }
 
-							@Override
-							public void debug(Exception e) {
-								plugin.debug(e);
-							}
+                        @Override
+                        public void severe(String text) {
+                            plugin.getLogger().severe(text);
+                        }
 
-							@Override
-							public void debug(String text) {
-								plugin.debug(text);
-							}
-						});
-			}
-			globalDataHandler.getGlobalMysql().alterColumnType("IgnoreTime", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("MONTH", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("WEEK", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("DAY", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("FinishedProcessing", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("Processing", "VARCHAR(5)");
-			globalDataHandler.getGlobalMysql().alterColumnType("LastUpdated", "MEDIUMTEXT");
-			globalDataHandler.getGlobalMysql().alterColumnType("ForceUpdate", "VARCHAR(5)");
-			plugin.getTimeChecker().setProcessingEnabled(false);
-		}
+                        @Override
+                        public void debug(Exception e) {
+                            plugin.debug(e);
+                        }
+
+                        @Override
+                        public void debug(String text) {
+                            plugin.debug(text);
+                        }
+
+                        @Override
+                        public void info(String message) { // Add implementation for info(String)
+                            plugin.getLogger().info(message);
+                        }
+                    });
+        }
+
+        globalDataHandler.getGlobalMysql().alterColumnType("IgnoreTime", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("MONTH", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("WEEK", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("DAY", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("FinishedProcessing", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("Processing", "VARCHAR(5)");
+        globalDataHandler.getGlobalMysql().alterColumnType("LastUpdated", "MEDIUMTEXT");
+        globalDataHandler.getGlobalMysql().alterColumnType("ForceUpdate", "VARCHAR(5)");
+        plugin.getTimeChecker().setProcessingEnabled(false);
+
+    	}
 	}
 
 	public void load() {

@@ -316,143 +316,151 @@ public class VotingPluginBungee extends Plugin implements Listener {
 	private void loadMysql() {
 		mysql = new BungeeMySQL(this, "VotingPlugin_Users", config.getData()) {
 
-			@Override
-			public void debug(SQLException e) {
-				if (config.getDebug()) {
-					e.printStackTrace();
-				}
-			}
+		    @Override
+		    public void debug(SQLException e) {
+		        if (config.getDebug()) {
+		            e.printStackTrace();
+		        }
+		    }
 		};
 
-		ArrayList<String> servers = new ArrayList<String>();
+		ArrayList<String> servers = new ArrayList<>();
 		for (String s : getAvailableAllServers()) {
-			servers.add(s);
+		    servers.add(s);
 		}
 
 		if (config.getGlobalDataEnabled()) {
-			if (config.getGlobalDataUseMainMySQL()) {
-				globalDataHandler = new GlobalDataHandlerProxy(
-						new GlobalMySQL("VotingPlugin_GlobalData", getMysql().getMysql()) {
+		    if (config.getGlobalDataUseMainMySQL()) {
+		        globalDataHandler = new GlobalDataHandlerProxy(
+		                new GlobalMySQL("VotingPlugin_GlobalData", getMysql().getMysql()) {
 
-							@Override
-							public void warning(String text) {
-								getLogger().warning(text);
-							}
+		                    @Override
+		                    public void warning(String text) {
+		                        getLogger().warning(text);
+		                    }
 
-							@Override
-							public void severe(String text) {
-								getLogger().severe(text);
-							}
+		                    @Override
+		                    public void severe(String text) {
+		                        getLogger().severe(text);
+		                    }
 
-							@Override
-							public void debug(Exception e) {
-								if (config.getDebug()) {
-									e.printStackTrace();
-								}
-							}
+		                    @Override
+		                    public void debug(Exception e) {
+		                        if (config.getDebug()) {
+		                            e.printStackTrace();
+		                        }
+		                    }
 
-							@Override
-							public void debug(String text) {
-								debug2(text);
-							}
-						}, servers) {
+		                    @Override
+		                    public void debug(String text) {
+		                        debug2(text);
+		                    }
 
-					@Override
-					public void onTimeChangedFinished(TimeType type) {
-						if (type.equals(TimeType.MONTH)) {
-							getMysql().copyColumnData(TopVoter.Monthly.getColumnName(), "LastMonthTotal");
-						}
-						getMysql().wipeColumnData(TopVoter.of(type).getColumnName(), DataType.INTEGER);
+		                    @Override
+		                    public void info(String message) {
+		                        getLogger().info("[GlobalMySQL INFO]: " + message);
+		                    }
+		                }, servers) {
 
-						if (!config.getGlobalDataEnabled()) {
-							return;
-						}
-						for (String s : getAvailableAllServers()) {
-							getGlobalDataHandler().setBoolean(s, "ForceUpdate", true);
-							if (method.equals(BungeeMethod.PLUGINMESSAGING)) {
-								sendPluginMessageServer(s, "BungeeTimeChange", "");
-							} else if (method.equals(BungeeMethod.SOCKETS)) {
-								sendServerMessage(s, "BungeeTimeChange");
-							}
-						}
+		            @Override
+		            public void onTimeChangedFinished(TimeType type) {
+		                if (type.equals(TimeType.MONTH)) {
+		                    getMysql().copyColumnData(TopVoter.Monthly.getColumnName(), "LastMonthTotal");
+		                }
+		                getMysql().wipeColumnData(TopVoter.of(type).getColumnName(), DataType.INTEGER);
 
-						processQueue();
+		                if (!config.getGlobalDataEnabled()) {
+		                    return;
+		                }
+		                for (String s : getAvailableAllServers()) {
+		                    getGlobalDataHandler().setBoolean(s, "ForceUpdate", true);
+		                    if (method.equals(BungeeMethod.PLUGINMESSAGING)) {
+		                        sendPluginMessageServer(s, "BungeeTimeChange", "");
+		                    } else if (method.equals(BungeeMethod.SOCKETS)) {
+		                        sendServerMessage(s, "BungeeTimeChange");
+		                    }
+		                }
 
-					}
+		                processQueue();
+		            }
 
-					@Override
-					public void onTimeChangedFailed(String server, TimeType type) {
-						getGlobalDataHandler().setBoolean(server, type.toString(), false);
-						getGlobalDataHandler().setBoolean(server, "FinishedProcessing", true);
-						getGlobalDataHandler().setBoolean(server, "Processing", false);
-					}
-				};
-			} else {
-				globalDataHandler = new GlobalDataHandlerProxy(new GlobalMySQL("VotingPlugin_GlobalData",
-						new MysqlConfigBungee(config.getData().getSection("GlobalData"))) {
+		            @Override
+		            public void onTimeChangedFailed(String server, TimeType type) {
+		                getGlobalDataHandler().setBoolean(server, type.toString(), false);
+		                getGlobalDataHandler().setBoolean(server, "FinishedProcessing", true);
+		                getGlobalDataHandler().setBoolean(server, "Processing", false);
+		            }
+		        };
+		    } else {
+		        globalDataHandler = new GlobalDataHandlerProxy(new GlobalMySQL("VotingPlugin_GlobalData",
+		                new MysqlConfigBungee(config.getData().getSection("GlobalData"))) {
 
-					@Override
-					public void warning(String text) {
-						getLogger().warning(text);
-					}
+		            @Override
+		            public void warning(String text) {
+		                getLogger().warning(text);
+		            }
 
-					@Override
-					public void severe(String text) {
-						getLogger().severe(text);
-					}
+		            @Override
+		            public void severe(String text) {
+		                getLogger().severe(text);
+		            }
 
-					@Override
-					public void debug(Exception e) {
-						if (config.getDebug()) {
-							e.printStackTrace();
-						}
-					}
+		            @Override
+		            public void debug(Exception e) {
+		                if (config.getDebug()) {
+		                    e.printStackTrace();
+		                }
+		            }
 
-					@Override
-					public void debug(String text) {
-						debug2(text);
-					}
-				}, servers) {
+		            @Override
+		            public void debug(String text) {
+		                debug2(text);
+		            }
 
-					@Override
-					public void onTimeChangedFinished(TimeType type) {
-						if (type.equals(TimeType.MONTH)) {
-							getMysql().copyColumnData(TopVoter.Monthly.getColumnName(), "LastMonthTotal");
-						}
-						getMysql().wipeColumnData(TopVoter.of(type).getColumnName(), DataType.INTEGER);
+		            @Override
+		            public void info(String message) {
+		                getLogger().info("[GlobalMySQL INFO]: " + message);
+		            }
+		        }, servers) {
 
-						if (!config.getGlobalDataEnabled()) {
-							return;
-						}
-						for (String s : getAvailableAllServers()) {
-							getGlobalDataHandler().setBoolean(s, "ForceUpdate", true);
-							if (method.equals(BungeeMethod.PLUGINMESSAGING)) {
-								sendPluginMessageServer(s, "BungeeTimeChange", "");
-							} else if (method.equals(BungeeMethod.SOCKETS)) {
-								sendServerMessage(s, "BungeeTimeChange");
-							}
-						}
+		            @Override
+		            public void onTimeChangedFinished(TimeType type) {
+		                if (type.equals(TimeType.MONTH)) {
+		                    getMysql().copyColumnData(TopVoter.Monthly.getColumnName(), "LastMonthTotal");
+		                }
+		                getMysql().wipeColumnData(TopVoter.of(type).getColumnName(), DataType.INTEGER);
 
-						processQueue();
+		                if (!config.getGlobalDataEnabled()) {
+		                    return;
+		                }
+		                for (String s : getAvailableAllServers()) {
+		                    getGlobalDataHandler().setBoolean(s, "ForceUpdate", true);
+		                    if (method.equals(BungeeMethod.PLUGINMESSAGING)) {
+		                        sendPluginMessageServer(s, "BungeeTimeChange", "");
+		                    } else if (method.equals(BungeeMethod.SOCKETS)) {
+		                        sendServerMessage(s, "BungeeTimeChange");
+		                    }
+		                }
 
-					}
+		                processQueue();
+		            }
 
-					@Override
-					public void onTimeChangedFailed(String server, TimeType type) {
-						getGlobalDataHandler().setBoolean(server, type.toString(), false);
-						getGlobalDataHandler().setBoolean(server, "FinishedProcessing", true);
-						getGlobalDataHandler().setBoolean(server, "Processing", false);
-					}
-				};
-			}
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("IgnoreTime", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("MONTH", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("WEEK", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("DAY", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("FinishedProcessing", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("Processing", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("ForceUpdate", "VARCHAR(5)");
-			getGlobalDataHandler().getGlobalMysql().alterColumnType("LastUpdated", "MEDIUMTEXT");
+		            @Override
+		            public void onTimeChangedFailed(String server, TimeType type) {
+		                getGlobalDataHandler().setBoolean(server, type.toString(), false);
+		                getGlobalDataHandler().setBoolean(server, "FinishedProcessing", true);
+		                getGlobalDataHandler().setBoolean(server, "Processing", false);
+		            }
+		        };
+		    }
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("IgnoreTime", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("MONTH", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("WEEK", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("DAY", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("FinishedProcessing", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("Processing", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("ForceUpdate", "VARCHAR(5)");
+		    getGlobalDataHandler().getGlobalMysql().alterColumnType("LastUpdated", "MEDIUMTEXT");
 		}
 
 		// column types
@@ -483,11 +491,9 @@ public class VotingPluginBungee extends Plugin implements Listener {
 		getMysql().alterColumnType("OfflineRewards", "MEDIUMTEXT");
 		getMysql().alterColumnType("DayVoteStreakLastUpdate", "MEDIUMTEXT");
 		if (config.getStoreMonthTotalsWithDate()) {
-			getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now()), "INT DEFAULT '0'");
-			getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now().plusMonths(1)),
-					"INT DEFAULT '0'");
-			getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now().plusMonths(2)),
-					"INT DEFAULT '0'");
+		    getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now()), "INT DEFAULT '0'");
+		    getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now().plusMonths(1)), "INT DEFAULT '0'");
+		    getMysql().alterColumnType(getMonthTotalsWithDatePath(LocalDateTime.now().plusMonths(2)), "INT DEFAULT '0'");
 		}
 	}
 

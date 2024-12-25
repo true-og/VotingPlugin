@@ -364,6 +364,11 @@ public class VotingPluginVelocity {
 							public void debug(String text) {
 								debug2(text);
 							}
+
+							@Override
+							public void info(String text) {
+								logger.info(text);
+							}
 						}, servers) {
 
 					@Override
@@ -416,6 +421,10 @@ public class VotingPluginVelocity {
 							@Override
 							public void debug(String text) {
 								debug2(text);
+							}
+							@Override
+							public void info(String text) {
+								logger.info(text);
 							}
 						}, servers) {
 
