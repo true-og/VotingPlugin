@@ -1,9 +1,0 @@
-/bin/
-/target/
-/doc/
-/.idea/
-/*.iml
-/.settings/
-/.classpath
-/.factorypath
-/.apt_generated_tests/

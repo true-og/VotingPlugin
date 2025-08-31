@@ -1,0 +1,6 @@
+name: VotingPlugin
+version: '${version}'
+main: com.bencodez.votingplugin.proxy.bungee.VotingPluginBungee
+author: BenCodez
+softDepends:
+- RedisBungee
