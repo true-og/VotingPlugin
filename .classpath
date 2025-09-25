@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="output" path="bin/default"/>
+	<classpathentry output="bin/main" kind="src" path="src/main/java">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry output="bin/main" kind="src" path="src/main/resources">
+		<attributes>
+			<attribute name="gradle_scope" value="main"/>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17/"/>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.purpurmc.purpur/purpur-api/1.19.4-R0.1-SNAPSHOT/c2e4c45e24de3a51bb4288911e60d154288fec32/purpur-api-1.19.4-R0.1-SNAPSHOT-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.purpurmc.purpur/purpur-api/1.19.4-R0.1-SNAPSHOT/4eb8a5f1a392861b7e32675189a2abbf1033e444/purpur-api-1.19.4-R0.1-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/41bc8cca306da167a0e8bc62ce4769b34b90180f/lombok-1.18.38-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.38/57f8f5e02e92a30fd21b80cbd426a4172b5f8e29/lombok-1.18.38.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-api/1.21-R0.3/19f58b46844329a978b1e0515518c361f2fdf46d/bungeecord-api-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-api/1.21-R0.3/a68f070316c18972abd5ac691fb09696a142f1f4/bungeecord-api-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.vexsoftware/nuvotifier-universal/2.7.2/22de358655283a7d6ed40e7d821178a2d3bb8cae/nuvotifier-universal-2.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/be.maximvdw/mvdwplaceholderapi/3.1.1/1f6fb824832709bd5acabab5956855acfcd02422/mvdwplaceholderapi-3.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.2-SNAPSHOT/8e17d15640d51135c3893b70279c6c02f64f94f0/velocity-api-3.1.2-SNAPSHOT-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-api/3.1.2-SNAPSHOT/f6ef4800fb5be1acd9327e81ddd7cde5eaedd605/velocity-api-3.1.2-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/me.clip/placeholderapi/2.11.6/b42a4ec35b8e983f03c7cffedff7fa374df9879a/placeholderapi-2.11.6-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/me.clip/placeholderapi/2.11.6/d9ad7a4c2759a6cc5c824cf56e5d06f12333f88/placeholderapi-2.11.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.discordsrv/discordsrv/1.30.0/294c1d218bfb43020fdb4b2161dd23296a664368/discordsrv-1.30.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.discordsrv/discordsrv/1.30.0/ad9d8d2d285c1aa3835198412f1b70f1aae4af1a/discordsrv-1.30.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.bstats/bstats-velocity/3.1.0/ac355d8813ee6545215d42d9c9e7881c4353cc04/bstats-velocity-3.1.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.bstats/bstats-velocity/3.1.0/86a15284ba0ceff7d41e6d49e728221ff2638724/bstats-velocity-3.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.bencodez/advancedcore/3.7.19-SNAPSHOT/ba7473b277fd097ec474fdbc2c251bdf8c046abb/advancedcore-3.7.19-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-protocol/1.21-R0.3/ed5c52951903c62e72ccf32bc747e4cb297a524/bungeecord-protocol-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-protocol/1.21-R0.3/b375962da068bf8f122f36be8c18dea741cb8264/bungeecord-protocol-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-serializer/1.21-R0.3/5a78b84431df3aee6473a227527d8021d310f29d/bungeecord-serializer-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-serializer/1.21-R0.3/52fdbbfa5edd5776dbdf5a6e8c79efdf6370cc49/bungeecord-serializer-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-dialog/1.21-R0.3/c7426207793fc2a0afcbb3f9a7ee68dcb0479419/bungeecord-dialog-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-dialog/1.21-R0.3/4a1c58d9f97534206973a36f28736251fa880a9e/bungeecord-dialog-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-chat/1.21-R0.3/b338b8129856d0386d04f817a0acef36d36fed1c/bungeecord-chat-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-chat/1.21-R0.3/bec16f2314f19e73b8a639e60830894b3aaa89fa/bungeecord-chat-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-config/1.21-R0.3/18bf660104d24be21b166fdc0884b0f89f149e23/bungeecord-config-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-config/1.21-R0.3/5ed45375dc05ba6601033fb671a6d28aa135061/bungeecord-config-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-event/1.21-R0.3/cd08d63ad7e011688b1d1f5ba7f377235fa4fb77/bungeecord-event-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-event/1.21-R0.3/fda5849a0be11f944ff79c6e7a63629bbaa784a/bungeecord-event-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/5.0.1/2c1282746b8307a049a95e2374c855378c9f29e2/guice-5.0.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.inject/guice/5.0.1/dae7556b441cada2b4f0a2314eb68e1ff423429/guice-5.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-nbt/1.21-R0.3/40c8ba5afe9b24585dfebd507139434f7b4b1b40/bungeecord-nbt-1.21-R0.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.md-5/bungeecord-nbt/1.21-R0.3/1c8ba9c216f662795aa95a92ad75512e31843c15/bungeecord-nbt-1.21-R0.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-hocon/3.7.3/c329555024e021507c9d1e58722b9495790fd6a1/configurate-hocon-3.7.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-hocon/3.7.3/630e0562bd9b809428b55742aabe382f0347211f/configurate-hocon-3.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-yaml/3.7.3/666d003dbc23d773438cbbce9666dfa7ad5183dc/configurate-yaml-3.7.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-yaml/3.7.3/5329d80a00c1e053ceaeb94d8325cb7de349409c/configurate-yaml-3.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-gson/3.7.3/3ca870c5350380a539389bcad506ecc6b189e5c0/configurate-gson-3.7.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-gson/3.7.3/4facb1a9abd996fa3cce45dd128997765f50f75b/configurate-gson-3.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-core/3.7.3/9b8196839e148417e7c590eaeee0e405b4be8011/configurate-core-3.7.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.spongepowered/configurate-core/3.7.3/f852a1d0e336eb07c1f45ed1dc275b7d6a6d676a/configurate-core-3.7.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.3.1-jre/e788c9bc41ef2bcbb89794f793da9b576b5dde38/guava-33.3.1-jre-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/33.3.1-jre/852f8b363da0111e819460021ca693cacca3e8db/guava-33.3.1-jre.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.moandjiezana.toml/toml4j/0.7.2/b957d79fcb9e8a7d06c9634a0c1110128f65405a/toml4j-0.7.2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.moandjiezana.toml/toml4j/0.7.2/a03337911d0bd2c40932aca3946edb30d0e7d0c/toml4j-0.7.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.13.1/c6df61925d3e0f0f24235a9904ca641849bf836f/adventure-text-logger-slf4j-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-logger-slf4j/4.13.1/ccfb76124442db71f12f0019286bd9ba15ca5d67/adventure-text-logger-slf4j-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.13.1/762dae39d9b4bbb4823f615c71d069986b450376/adventure-text-minimessage-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-minimessage/4.13.1/91469d87747c26b1da43175866e8a4c42f1cdd02/adventure-text-minimessage-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.13.1/648963cf53c21475657cc986474eed449d400a73/adventure-text-serializer-legacy-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-legacy/4.13.1/aa2bae0c78ac6863b0a137a2133422f588d92a32/adventure-text-serializer-legacy-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.13.1/49ac7de87ffb30fe14ad552628f5e6a0a53a91ab/adventure-text-serializer-plain-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-plain/4.13.1/7e4749b301c589ee665fa2844ff71e50e2ea5658/adventure-text-serializer-plain-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.13.1/91ae69efd52fc7c07872ae988afc4f909758a8d3/adventure-api-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-api/4.13.1/5a68f15c90e328378f64d227474454779522246/adventure-api-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.13.1/619f2aba3333bc94a8e33dc6baf8f2718949b0eb/adventure-key-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-key/4.13.1/f5deec8aaa84e00794724f694fb0fc43cca02d0c/adventure-key-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.13.1/b585f1b7dc5b930df239b3122d99da3e56cb48fc/adventure-text-serializer-gson-4.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/adventure-text-serializer-gson/4.13.1/6c96295a35605beaf6db6f5dcc2a76abed59fc08/adventure-text-serializer-gson-4.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.bencodez/simpleapi/0.0.8-SNAPSHOT/1a08c2233f7b53ccaf7cdc8ff9b0e9ab7b108726/simpleapi-0.0.8-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/6.1.0/db2590ac822b79086dca6f28c1c026b72027ab89/jedis-6.1.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/redis.clients/jedis/6.1.0/ba8444e905836010de4c39b84a0372917ac051bf/jedis-6.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.13.1/291e19613797898e0b2ba95553c874c1d07e00c1/gson-2.13.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.13.1/853ce06c11316b33a8eae5e9095da096a9528b8f/gson-2.13.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/575a7915b847393207642575c139177ac2b2ac23/snakeyaml-2.2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.yaml/snakeyaml/2.2/3af797a25458550a16bf89acc8e4ab2b7f2bfce0/snakeyaml-2.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/c1f2266a7d0386d7643879ed1b93f51d29126180/joml-1.10.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.joml/joml/1.10.5/22566d58af70ad3d72308bab63b8339906deb649/joml-1.10.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/15bba08e3a239d54b68209c001f9c911559d2fed/json-simple-1.1.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.googlecode.json-simple/json-simple/1.1.1/c9ad4a0850ab676c5c64461a05ca524cdfff59f1/json-simple-1.1.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/cae16d296ddc343bfb4e20ef67fbcef07fca40e/fastutil-8.5.6-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil/8.5.6/76f95700418a68fbc4ac050525261f05dc681ca1/fastutil-8.5.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d23d37cc41300a7f6eba7813855dbb224e2a3177/log4j-api-2.17.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.logging.log4j/log4j-api/2.17.1/d771af8e336e372fb5399c99edabe0919aeaf5b2/log4j-api-2.17.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.17/59514e6ee2a098b2127cc6923e241be86a087f31/slf4j-simple-2.0.17-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/2.0.17/9872a3fd794ffe7b18d17747926a64d61526ca96/slf4j-simple-2.0.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-resolver-provider/3.8.5/dcc3675d8bd3d4a0259bbd9e327fc67df7be3aed/maven-resolver-provider-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-resolver-provider/3.8.5/91f423a4584f2fc7f45cac5b0b58edc33c077249/maven-resolver-provider-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.6.3/3d2c6bc74b5a685285d503d5178318127589dcce/maven-resolver-impl-1.6.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-impl/1.6.3/2714ffe60bd71259a41b3e4816122504b5f2db93/maven-resolver-impl-1.6.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/6.3.2/16dde96a4e00aab14fdd427ba62d94e7a669dbc2/HikariCP-6.3.2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.zaxxer/HikariCP/6.3.2/d09ad7d252c2a8daaa99ed5f3b0d54f95b9b344/HikariCP-6.3.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/redis.clients.authentication/redis-authx-core/0.1.1-beta2/ac2c155466d5d18e31a995e288598093931f873e/redis-authx-core-0.1.1-beta2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/redis.clients.authentication/redis-authx-core/0.1.1-beta2/4037345ff29fb22c737bab2ed116a34262718ae5/redis-authx-core-0.1.1-beta2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.17/d7da5e7fecb3544b1e32f86dc0ef5d5ecf9f381b/slf4j-api-2.0.17-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/2.0.17/d9e58ac9c7779ba3bf8142aff6c830617a7fe60f/slf4j-api-2.0.17.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.sentry/sentry/5.4.0/533d682fecf5eb543d7944ea3a383a2f41a3c760/sentry-5.4.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.sentry/sentry/5.4.0/34634400caa75e05c768a182d9afa566571f8b26/sentry-5.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/dfd1d5ec59d04e7bd1ad44e74da445b880cfc2e1/checker-qual-3.43.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.checkerframework/checker-qual/3.43.0/9425eee39e56b116d2b998b7c2cebcbd11a3c98b/checker-qual-3.43.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.1.Final/fca9c874adcd4a7740f9c152c33166a86834ec25/netty-transport-native-unix-common-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport-native-unix-common/4.2.1.Final/9edcc29edb12cb33890e6de025fbb60cc3846d6d/netty-transport-native-unix-common-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/c716b68a9cfaf99c27ce956ba74cc4fd2ef33467/velocity-brigadier-1.0.0-SNAPSHOT-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.velocitypowered/velocity-brigadier/1.0.0-SNAPSHOT/719dd1bda540a9be7f70f23c68fbe1a0e2fc69ca/velocity-brigadier-1.0.0-SNAPSHOT.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/examination-string/1.3.0/d06d07677cf2022bdf38136ba550aea9852cc1bd/examination-string-1.3.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/examination-string/1.3.0/6f34afef5c54ccce4996bc321abf77518b55b4bd/examination-string-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/examination-api/1.3.0/24ee397e9360897e1a5053e269be691abc611ca2/examination-api-1.3.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/net.kyori/examination-api/1.3.0/8a2d185275307f1e2ef2adf7152b9a0d1d44c30b/examination-api-1.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/2f9be7fbab3157633befe74c684bd3badb28a876/annotations-24.0.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/24.0.1/13c5c75c4206580aa4d683bffee658caae6c9f43/annotations-24.0.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.bstats/bstats-base/3.1.0/1111868de617d4afd9fe48b77dac5dc56dfe4b6f/bstats-base-3.1.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.bstats/bstats-base/3.1.0/b533f04d7371584d479b912116ea4cda868699e4/bstats-base-3.1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/xyz.upperlevel.spigot.book/spigot-book-api/1.6/e192a4b2b97e51db72d9348837b9c43bea5ce5b4/spigot-book-api-1.6-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/xyz.upperlevel.spigot.book/spigot-book-api/1.6/3cc78e0ab2caa9cb095b7b3e954bbf25dbbbfd7a/spigot-book-api-1.6.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.8.5/8731fcc8ec0dc60b793af5d275fda9fe0993b760/maven-model-builder-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model-builder/3.8.5/d719e354056fcf486cd2300cce3d1a422349fd38/maven-model-builder-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.8.5/d2d3a9d521d6ee544ca0e15e2526c05e98a2f3d6/maven-model-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-model/3.8.5/a22c2ed76cbd2f78120d9c653f89e15123d473fe/maven-model-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.8.5/9b3c4cba55454f73317136bd870806be5300f269/maven-repository-metadata-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-repository-metadata/3.8.5/a9cf3ff3e565dedd8231c05f4ccb6b61e6215a82/maven-repository-metadata-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-spi/1.6.3/edd97fbfbe496907590d60299050f6495587a751/maven-resolver-spi-1.6.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-spi/1.6.3/176425f73fe768bf9cdb8b5a742e7a00c1d8d178/maven-resolver-spi-1.6.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-util/1.6.3/72030ddca05ee6702eff31871b1213b8fdbc25c9/maven-resolver-util-1.6.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-util/1.6.3/7d5a6879037b34c61c2f527dfcfb59084e86ed0/maven-resolver-util-1.6.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.6.3/6290ba70106329e257e10fca4f7e97cb6b5d169b/maven-resolver-api-1.6.3-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven.resolver/maven-resolver-api/1.6.3/5ee235aa5ac5994b5dc847f8e78ffe9d77dd55d7/maven-resolver-api-1.6.3.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/63964307a951bff155bcd09bfa647afadbd95dca/maven-artifact-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-artifact/3.8.5/4433f50c07debefaed0553bd0068f4f48d449313/maven-artifact-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/ebfaf7070f7a3f5314ff28180d81088aa8cd2f41/plexus-utils-3.3.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-utils/3.3.0/cf43b5391de623b36fe066a21127baef82c64022/plexus-utils-3.3.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/6acdafcf2dfc3b548e59dd3a4b454552aeb6ff65/failureaccess-1.0.2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.guava/failureaccess/1.0.2/c4a06a64e650562f30b7bf9aaec1bfed43aca12b/failureaccess-1.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/b421526c5f297295adef1c886e5246c39d4ac629/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/b19b5927c2c25b6c70f093767041e641ae0b1b35/jsr305-3.0.2-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.code.findbugs/jsr305/3.0.2/25ea2e8b0c338a877313bd4672d3fe056ea78f0d/jsr305-3.0.2.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.38.0/89b24f7eb69d776239d46ae4979e3d61a0784a9/error_prone_annotations-2.38.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.errorprone/error_prone_annotations/2.38.0/fc0ae991433e8590ba51cd558421478318a74c8c/error_prone_annotations-2.38.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/e6e870c6faf70867a723848b036607cd7d389621/j2objc-annotations-3.0.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.google.j2objc/j2objc-annotations/3.0.0/7399e65dd7e9ff3404f4535b2f017093bdb134c7/j2objc-annotations-3.0.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.2.9/b81375eb6ee3fccbda1841a5620a61798655beb/brigadier-1.2.9-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.mojang/brigadier/1.2.9/73e324f2ee541493a5179abf367237faa782ed21/brigadier-1.2.9.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.2.1.Final/e1ae6c3b700c63e173c9321bc8abb44a0af15d7c/netty-codec-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec/4.2.1.Final/55421a0c16ccd25692613e86f75b5a3f8db3ea82/netty-codec-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil-core/8.5.15/6cf963f9e32ab15455ef0c46d792b33b565bbb56/fastutil-core-8.5.15-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/it.unimi.dsi/fastutil-core/8.5.15/b1c877e4cc3618aa3ba34f9a44520b5f8fdbb5f7/fastutil-core-8.5.15.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.1.Final/972eb792ed443319752e2f18c880bda2cd637b5b/netty-codec-compression-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-compression/4.2.1.Final/b85ef35b94d1b540c021df6bb778cc8dc086588b/netty-codec-compression-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-protobuf/4.2.1.Final/1014a1f994c7eff45e29546125864919a875ea03/netty-codec-protobuf-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-protobuf/4.2.1.Final/86c04147717b63edadb9e2d1bd371f6091e2ba0/netty-codec-protobuf-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-marshalling/4.2.1.Final/6c7c9be7974d89e10b4ba3ed02d343e31f7c7db9/netty-codec-marshalling-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-marshalling/4.2.1.Final/838fd5dc1ae854879a9e553a0d217abfd5d7fda9/netty-codec-marshalling-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-base/4.2.1.Final/d60290e3f760e1f80c70c220a7055417d8f6b49f/netty-codec-base-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-codec-base/4.2.1.Final/ee2a21f30549d6fb0ec1da71ac748c385368d807/netty-codec-base-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.2.1.Final/41cc00982b0f31b7171870b1069351285279b6cb/netty-transport-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-transport/4.2.1.Final/5c9140fffd02fe833a570dfd00c3dced88c72abd/netty-transport-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.2.1.Final/6a4056ff486962af293035de4fdeff3993a038ea/netty-buffer-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-buffer/4.2.1.Final/95e48c931eb31614c06adf775a2118f4297fd97/netty-buffer-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.2.1.Final/a94ddb6e8db72d408c397c416c129abdad953cdf/netty-resolver-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-resolver/4.2.1.Final/80a111e04ee696cca0fe928b7a64787551a848e4/netty-resolver-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.2.1.Final/8b3fb6895ae263b7752e73bb2d02db86749319d9/netty-common-4.2.1.Final-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/io.netty/netty-common/4.2.1.Final/ed99ce89380bc3e9b297c9a5d87fbb6e669e1cf4/netty-common-4.2.1.Final.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.4.0/e748b8348e1910b0935bf662e21e748290229e7f/config-1.4.0-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.typesafe/config/1.4.0/a8b341fe81552834edc231193afd6f56a96f0eff/config-1.4.0.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/com.tcoded/FoliaLib/0.3.4/97f34278dd3a78536da6c8698797cc7f94c6dc3f/FoliaLib-0.3.4.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.2.5/84b4c91988da0a6e20ae5ac622b3b053492ecb51/org.eclipse.paho.client.mqttv3-1.2.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.eclipse.paho/org.eclipse.paho.client.mqttv3/1.2.5/1546cfc794449c39ad569853843a930104fdc297/org.eclipse.paho.client.mqttv3-1.2.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.26/7182d32d452bbfedfe88ecd86245ef7b90048460/plexus-interpolation-1.26-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.codehaus.plexus/plexus-interpolation/1.26/25b919c664b79795ccde0ede5cee0fd68b544197/plexus-interpolation-1.26.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-builder-support/3.8.5/5de3489f483f45a8c2aa45e13c476efe5de15886/maven-builder-support-3.8.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.maven/maven-builder-support/3.8.5/941dd5bbaaa1b2134510e7b3c6175911d0bbecca/maven-builder-support-3.8.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.3.5/2627739a2c89b6c35718458774d9847616e12b44/org.eclipse.sisu.inject-0.3.5-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.eclipse.sisu/org.eclipse.sisu.inject/0.3.5/d4265dd4f0f1d7a06d80df5a5f475d5ff9c17140/org.eclipse.sisu.inject-0.3.5.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/e9748d7783594da3735ad9724390a10e7cebc01d/commons-lang3-3.8.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.8.1/6505a72a097d9270f7a9e7bf42c4238283247755/commons-lang3-3.8.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.12.1/e58ee967a3d568ef60fd683792bbe8798d483f99/commons-pool2-2.12.1-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-pool2/2.12.1/e5c7b6c9f5a4b59be2bba213fbec70b413376fc1/commons-pool2-2.12.1.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.json/json/20250517/4ef4d0757b5292b28702ad63181fdb29114b386d/json-20250517-sources.jar" kind="lib" path="/home/montcogreens/.gradle/caches/modules-2/files-2.1/org.json/json/20250517/d67181bbd819ccceb929b580a4e2fcb0c8b17cd8/json-20250517.jar">
+		<attributes>
+			<attribute name="gradle_used_by_scope" value="main,test"/>
+		</attributes>
+	</classpathentry>
+</classpath>

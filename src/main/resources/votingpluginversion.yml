@@ -1,0 +1,4 @@
+time: '${timestamp}'
+profile: '${build.profile.id}'
+version: '${version}'
+buildnumber: '${build.number}'
