@@ -1,6 +1,0 @@
-name: VotingPlugin
-version: '6.19.1-SNAPSHOT'
-main: com.bencodez.votingplugin.proxy.bungee.VotingPluginBungee
-author: BenCodez
-softDepends:
-- RedisBungee
