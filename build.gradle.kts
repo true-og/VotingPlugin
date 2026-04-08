@@ -4,7 +4,7 @@ import org.gradle.jvm.toolchain.JvmVendorSpec
 plugins {
     id("java")
     eclipse
-    id("com.gradleup.shadow") version "8.3.8"
+    id("com.gradleup.shadow") version "8.3.9"
 }
 
 group = "com.bencodez"
@@ -25,7 +25,10 @@ repositories {
     maven { url = uri("https://oss.sonatype.org/content/repositories/snapshots/") }
     maven { url = uri("https://hub.spigotmc.org/nexus/content/repositories/snapshots/") }
     maven { url = uri("https://repo.papermc.io/repository/maven-public/") }
-    maven { url = uri("https://nexus.velocitypowered.com/repository/maven-public/") }
+    maven {
+        url = uri("https://nexus.velocitypowered.com/repository/maven-public/")
+        content { includeGroup("com.velocitypowered") }
+    }
     maven { url = uri("https://nexus.bencodez.com/repository/maven-public/") }
     maven { url = uri("https://repo.extendedclip.com/content/repositories/placeholderapi/") }
     maven { url = uri("https://nexus.scarsz.me/content/groups/public/") }
