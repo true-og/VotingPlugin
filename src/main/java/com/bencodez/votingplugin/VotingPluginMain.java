@@ -1394,6 +1394,8 @@ public class VotingPluginMain extends AdvancedCorePlugin {
 	public void onPreLoad() {
 		plugin = this;
 
+		setLoadVault(false);
+
 		setupFiles();
 
 		loadVoteSites();

@@ -740,10 +740,6 @@ DisableAdvancedTab: false
 # Requires restart to take effect
 LoadCommandAliases: true
 
-# Use vault for permission checks
-# May not work on some plugins
-UseVaultPermissions: false
-
 # List of disabled commands from /vote
 # List the specific permission
 # E.g:
