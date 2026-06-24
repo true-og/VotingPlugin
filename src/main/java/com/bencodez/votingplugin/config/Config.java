@@ -244,6 +244,10 @@ public class Config extends YMLFile {
 	@Getter
 	private boolean disableAdvancedTab = false;
 
+	@ConfigDataBoolean(path = "DisableActionBar")
+	@Getter
+	private boolean disableActionBar = false;
+
 	@ConfigDataBoolean(path = "DisableCoolDownCheck")
 	@Getter
 	private boolean disableCoolDownCheck = false;

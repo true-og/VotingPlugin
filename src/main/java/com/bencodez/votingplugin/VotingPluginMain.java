@@ -1254,6 +1254,12 @@ public class VotingPluginMain extends AdvancedCorePlugin {
 			}
 		});
 
+		// Remove the built-in ActionBar reward effect when disabled in config
+		if (getConfigFile().isDisableActionBar()) {
+			getRewardHandler().getInjectedRewards().removeIf(inject -> "ActionBar".equals(inject.getPath()));
+			debug("Action bar messages disabled");
+		}
+
 		getRewardHandler().addInjectedRequirements(new RequirementInjectConfigurationSection("VoteTotal") {
 
 			@Override

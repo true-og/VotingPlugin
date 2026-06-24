@@ -55,8 +55,13 @@ public class VoteReminding {
 	}
 
 	private void giveReward(VotingPluginUser user) {
+		int sitesAvailable = user.getSitesNotVotedOn();
+		if (sitesAvailable <= 0) {
+			plugin.debug("Not reminding " + user.getPlayerName() + ", no sites available to vote on");
+			return;
+		}
 		new RewardBuilder(plugin.getConfigFile().getData(), plugin.getConfigFile().getVoteRemindingRewardsPath())
-				.withPlaceHolder("sitesavailable", "" + user.getSitesNotVotedOn()).setGiveOffline(false)
+				.withPlaceHolder("sitesavailable", "" + sitesAvailable).setGiveOffline(false)
 				.disableDefaultWorlds().send(user);
 	}
 

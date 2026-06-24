@@ -488,6 +488,10 @@ WaitUntilLoggedIn: true
 # Disable/Enable features
 ###########################################
 
+# If true, disables all action bar messages from rewards
+# Requires restart
+DisableActionBar: true
+
 # If true, cooldown check is disabled
 DisableCoolDownCheck: false
 
