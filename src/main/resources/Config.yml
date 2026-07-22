@@ -12,17 +12,17 @@
 # Valid Options:
 # - SQLITE 
 # - MYSQL
-DataStorage: SQLITE
+DataStorage: MYSQL
 
 # Information for mysql
 # See the end of the config for cache options
 MySQL:
-  Host: ''
+  Host: 'localhost'
   # Default port is 3306
   Port: 3306 
-  Database: ''
-  Username: ''
-  Password: ''
+  Database: 'votingplugin'
+  Username: '^{MYSQL_USER}'
+  Password: '^{MYSQL_PASSWORD}'
   # Max number of connections
   MaxConnections: 1
   # Table name prefix, for use with mutliple servers

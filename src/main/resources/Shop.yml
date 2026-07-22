@@ -1,5 +1,5 @@
 VoteShop:
-  Enabled: true
+  Enabled: false
   Name: 'VoteShop'
   BackButton: true
   # Hide items in vote shop which user can not buy
