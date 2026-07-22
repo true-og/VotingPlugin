@@ -21,8 +21,8 @@ MySQL:
   # Default port is 3306
   Port: 3306 
   Database: 'votingplugin'
-  Username: '^{MYSQL_USER}'
-  Password: '^{MYSQL_PASSWORD}'
+  Username: '^{MARIADB_USER}'
+  Password: '^{MARIADB_PASSWORD}'
   # Max number of connections
   MaxConnections: 1
   # Table name prefix, for use with mutliple servers
@@ -512,7 +512,7 @@ DisableNoServiceSiteMessage: false
 CountFakeVotes: true
 
 # Whether or not to disable update checks
-DisableUpdateChecking: false
+DisableUpdateChecking: true
 
 # Enable per site cooldown events, requires more resources to use
 # Requires restart
