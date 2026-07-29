@@ -5,9 +5,9 @@ VoteSites:
     Priority: 5
     Hidden: false
     ServiceSite: 'minecraft-server-list.com'
-    VoteURL: 'https://minecraft-server-list.com'
-    VoteDelay: 24
-    WaitUntilVoteDelay: false
+    VoteURL: 'https://minecraft-server-list.com/server/522059'
+    VoteDelay: 23
+    WaitUntilVoteDelay: true
     VoteDelayDaily: false
     ForceOffline: false
     DisplayItem:
@@ -25,9 +25,9 @@ VoteSites:
     Priority: 4
     Hidden: false
     ServiceSite: 'minecraft-servers.gg'
-    VoteURL: 'https://minecraft-servers.gg'
-    VoteDelay: 24
-    WaitUntilVoteDelay: false
+    VoteURL: 'https://minecraft-servers.gg/server/7443-true-og-net'
+    VoteDelay: 23
+    WaitUntilVoteDelay: true
     VoteDelayDaily: false
     ForceOffline: false
     DisplayItem:

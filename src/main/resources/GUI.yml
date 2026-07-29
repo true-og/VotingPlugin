@@ -121,7 +121,7 @@ CHEST:
       Data: 0
       Amount: 1
     # URL when clicking item in /vote (GUI version)
-    URLText: '%VoteUrl%'
+    URLText: '&3&lVote at &b&l[Text="&b&l%VoteUrl%",hover="&aClick to open %sitename%",url="%VoteUrl%"]'
     # #Add Extra items
     # This extra item format works across other gui settings below
     # ExtraItems:

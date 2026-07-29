@@ -136,10 +136,12 @@ Format:
       # make sure to set VoteURL in your VoteSites
       # Requires above to be true
       # Text will be sent before this
-      Sites: '&3%num%: &6&l%SiteName% &6- %url%'
-      
+      Sites: '&3%num%: &6&l%SiteName% &6- [Text="&b&l%url%",hover="&aClick to open %SiteName%",url="%url%"]'
+
       # If true, links will always be forced as urls
-      ForceLinks: true
+      # Kept false so the json above controls the link text/color instead of
+      # the plugin auto-wrapping %url% into an uncolored clickable component
+      ForceLinks: false
       
       # Format for /vote next
       Next: 

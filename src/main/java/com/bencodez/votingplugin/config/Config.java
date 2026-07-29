@@ -310,7 +310,7 @@ public class Config extends YMLFile {
 
 	@ConfigDataBoolean(path = "Format.Commands.Vote.ForceLinks")
 	@Getter
-	private boolean formatCommandsVoteForceLinks = true;
+	private boolean formatCommandsVoteForceLinks = false;
 
 	@ConfigDataString(path = "Format.Commands.Vote.Last.LastVoted")
 	@Getter

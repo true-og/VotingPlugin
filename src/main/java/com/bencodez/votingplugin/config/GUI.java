@@ -352,7 +352,7 @@ public class GUI extends YMLFile {
 
 	@ConfigDataString(path = "CHEST.VoteURL.URLText")
 	@Getter
-	private String chestVoteURLURLText = "%VoteUrl%";
+	private String chestVoteURLURLText = "&3&lVote at &b&l[Text=\"&b&l%VoteUrl%\",hover=\"&aClick to open %sitename%\",url=\"%VoteUrl%\"]";
 
 	@ConfigDataBoolean(path = "CHEST.VoteURL.ViewAllUrlsButtonEnabled")
 	@Getter
