@@ -12,7 +12,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.regex.Pattern;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.command.CommandSender;
 import org.bukkit.configuration.ConfigurationSection;
@@ -77,6 +76,9 @@ import com.bencodez.votingplugin.events.PlayerVoteSiteCoolDownEndEvent;
 import com.bencodez.votingplugin.objects.VoteSite;
 import com.bencodez.votingplugin.topvoter.TopVoter;
 import com.bencodez.votingplugin.user.VotingPluginUser;
+
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -818,8 +820,10 @@ public class CommandLoader {
 
 			@Override
 			public void execute(CommandSender sender, String[] args) {
-				sender.sendMessage(ChatColor.GREEN + "UUID of player " + ChatColor.DARK_GREEN + args[1]
-						+ ChatColor.GREEN + " is: " + PlayerManager.getInstance().getUUID(args[1]));
+				sender.sendMessage(Component.text("UUID of player ", NamedTextColor.GREEN)
+						.append(Component.text(args[1], NamedTextColor.DARK_GREEN))
+						.append(Component.text(" is: " + PlayerManager.getInstance().getUUID(args[1]),
+								NamedTextColor.GREEN)));
 
 			}
 		});
@@ -830,11 +834,11 @@ public class CommandLoader {
 			@Override
 			public void execute(CommandSender sender, String[] args) {
 				try {
-					sender.sendMessage(ChatColor.GREEN + "PlayerName of player " + ChatColor.DARK_GREEN + args[1]
-							+ ChatColor.GREEN + " is: "
-							+ PlayerManager.getInstance().getPlayerName(
+					sender.sendMessage(Component.text("PlayerName of player ", NamedTextColor.GREEN)
+							.append(Component.text(args[1], NamedTextColor.DARK_GREEN))
+							.append(Component.text(" is: " + PlayerManager.getInstance().getPlayerName(
 									plugin.getVotingPluginUserManager().getVotingPluginUser(UUID.fromString(args[1])),
-									args[1]));
+									args[1]), NamedTextColor.GREEN)));
 				} catch (IllegalArgumentException e) {
 					sendMessage(sender, "&cInvalid uuid");
 				}

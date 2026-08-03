@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.entity.Player;
@@ -17,6 +16,9 @@ import com.bencodez.simpleapi.array.ArrayUtils;
 import com.bencodez.simpleapi.messages.MessageAPI;
 import com.bencodez.votingplugin.VotingPluginMain;
 import com.bencodez.votingplugin.user.VotingPluginUser;
+
+import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
+import net.kyori.adventure.text.serializer.plain.PlainTextComponentSerializer;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -178,8 +180,8 @@ public class VoteSite {
 	}
 
 	public String getVoteURLJsonStrip() {
-		String url = ChatColor
-				.stripColor(MessageAPI.colorize(PlaceholderUtils.parseJson(getVoteURL(false)).toPlainText()));
+		String url = PlainTextComponentSerializer.plainText().serialize(LegacyComponentSerializer.legacySection()
+				.deserialize(MessageAPI.colorize(PlaceholderUtils.parseJson(getVoteURL(false)).toPlainText())));
 		if (!url.startsWith("http")) {
 			if (!url.startsWith("www.")) {
 				url = "https://www." + url;

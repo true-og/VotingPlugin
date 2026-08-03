@@ -23,7 +23,8 @@ import com.bencodez.votingplugin.VotingPluginMain;
 import com.bencodez.votingplugin.topvoter.TopVoterPlayer;
 import com.bencodez.votingplugin.user.VotingPluginUser;
 
-import net.md_5.bungee.api.ChatColor;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.format.NamedTextColor;
 
 public class VoteTopVoterPreviousMonths extends GUIHandler {
 
@@ -68,18 +69,19 @@ public class VoteTopVoterPreviousMonths extends GUIHandler {
 			if (!yearMonthList.isEmpty()) {
 				yearMonth = yearMonthList.get(0);
 			}
-			player.sendMessage(ChatColor.RED + "Can't open previous months, no data");
+			player.sendMessage(Component.text("Can't open previous months, no data", NamedTextColor.RED));
 			return;
 		}
 		if (yearMonthList.size() <= index) {
-			player.sendMessage(ChatColor.RED + "Can't open previous months, no data for requested index");
+			player.sendMessage(
+					Component.text("Can't open previous months, no data for requested index", NamedTextColor.RED));
 			return;
 		}
 		yearMonth = yearMonthList.get(index);
 
 		Set<Entry<TopVoterPlayer, Integer>> users = null;
 		if (!plugin.getPreviousMonthsTopVoters().containsKey(yearMonth)) {
-			player.sendMessage(ChatColor.RED + "Can't open previous months, no data");
+			player.sendMessage(Component.text("Can't open previous months, no data", NamedTextColor.RED));
 			return;
 		}
 		users = plugin.getPreviousMonthsTopVoters().get(yearMonth).entrySet();

@@ -81,7 +81,9 @@ import com.bencodez.votingplugin.listeners.PlayerInteract;
 import com.bencodez.votingplugin.listeners.PlayerJoinEvent;
 import com.bencodez.votingplugin.listeners.PlayerVoteListener;
 import com.bencodez.votingplugin.listeners.SignChange;
+import com.bencodez.votingplugin.listeners.SurvivalRewardGate;
 import com.bencodez.votingplugin.listeners.VotiferEvent;
+import com.bencodez.votingplugin.listeners.WeekStreakExpBonus;
 import com.bencodez.votingplugin.listeners.VotingPluginUpdateEvent;
 import com.bencodez.votingplugin.objects.VoteSite;
 import com.bencodez.votingplugin.placeholders.MVdWPlaceholders;
@@ -1490,6 +1492,8 @@ public class VotingPluginMain extends AdvancedCorePlugin {
 			pm.registerEvents(new VotiferEvent(this), this);
 		}
 		pm.registerEvents(new PlayerVoteListener(this), this);
+		pm.registerEvents(new SurvivalRewardGate(this), this);
+		pm.registerEvents(new WeekStreakExpBonus(this), this);
 		pm.registerEvents(new SignChange(this), this);
 		pm.registerEvents(new BlockBreak(this), this);
 		if (!plugin.getConfigFile().isDisableInteractEvent()) {

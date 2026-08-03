@@ -14,8 +14,7 @@ VoteSites:
       Material: 'DIAMOND'
       Amount: 1
     Rewards:
-      Commands:
-      - 'xp give %player% 15L'
+      EXPLevels: 15
       Messages:
         Player: '&aThank you for voting on MinecraftServerList!'
 
@@ -34,8 +33,7 @@ VoteSites:
       Material: 'EMERALD'
       Amount: 1
     Rewards:
-      Commands:
-      - 'xp give %player% 15L'
+      EXPLevels: 15
       Messages:
         Player: '&aThank you for voting on MinecraftServersGG!'
         

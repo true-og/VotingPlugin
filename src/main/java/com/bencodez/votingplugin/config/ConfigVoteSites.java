@@ -7,7 +7,6 @@ import java.util.Collections;
 import java.util.Comparator;
 
 import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
@@ -213,7 +212,7 @@ public class ConfigVoteSites extends YMLFile {
 			try {
 				data.save(dFile);
 			} catch (IOException e) {
-				plugin.getLogger().severe(ChatColor.RED + "Could not create VoteSites/" + siteName + ".yml!");
+				plugin.getLogger().severe("Could not create VoteSites/" + siteName + ".yml!");
 
 			}
 		}
