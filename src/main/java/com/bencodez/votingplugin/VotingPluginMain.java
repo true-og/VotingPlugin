@@ -124,6 +124,11 @@ public class VotingPluginMain extends AdvancedCorePlugin {
 	@Getter
 	private BroadcastHandler broadcastHandler;
 
+	// Holds vote rewards back while a player is inside a minigame, where a delivery would be destroyed by the
+	// minigame restoring their real inventory afterwards.
+	@Getter
+	private SurvivalRewardGate survivalRewardGate;
+
 	@Getter
 	private BungeeHandler bungeeHandler;
 
@@ -1492,7 +1497,9 @@ public class VotingPluginMain extends AdvancedCorePlugin {
 			pm.registerEvents(new VotiferEvent(this), this);
 		}
 		pm.registerEvents(new PlayerVoteListener(this), this);
-		pm.registerEvents(new SurvivalRewardGate(this), this);
+		survivalRewardGate = new SurvivalRewardGate(this);
+		pm.registerEvents(survivalRewardGate, this);
+		survivalRewardGate.start();
 		pm.registerEvents(new WeekStreakExpBonus(this), this);
 		pm.registerEvents(new SignChange(this), this);
 		pm.registerEvents(new BlockBreak(this), this);
