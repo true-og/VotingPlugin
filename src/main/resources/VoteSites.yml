@@ -4,7 +4,7 @@ VoteSites:
     Name: 'MinecraftServerList'
     Priority: 5
     Hidden: false
-    ServiceSite: 'minecraft-server-list.com'
+    ServiceSite: 'MCSL'
     VoteURL: 'https://minecraft-server-list.com/server/522059'
     VoteDelay: 23
     WaitUntilVoteDelay: true
